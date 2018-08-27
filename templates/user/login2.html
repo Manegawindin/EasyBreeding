@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+	
+  {% block title %} Connexion | EasyBreeding {% endblock %}
+  
+	{% block stylesheets %}
+		<link href="{% static "assets/css/login2.css" %}" rel="stylesheet">
+	{% endblock %}
+
+{% block nav_sidebar %}
+    
+{% endblock %}
+
+{% block content_main %}
+		</br>
+		<br><br><br><br>
+<body>
+<div class="container">
+	<div class="row">
+		<section id="content" class="col-sm-6  col-md-6 p-2">
+			<form action="">
+				<h1>EasyBreeding</h1>
+				<div>
+					<input type="text" placeholder="Username" required="" id="username" />
+				</div>
+				<div>
+					<input type="password" placeholder="Password" required="" id="password" />
+				</div>
+				<div>
+					<input type="submit" value="Log in" />
+					<a href="#">Lost your password?</a>
+					<a href="#">Register</a>
+				</div>
+			</form><!-- form -->
+			<div class="button">
+				<a href="#">Download source file</a>
+			</div><!-- button -->
+		</section><!-- content -->
+	</div>
+</div><!-- container -->
+</body>
+
+{% endblock %}
+{% block footer %}
+	
+{% endblock %}

@@ -1,0 +1,925 @@
+{% load static %}<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Accueil |  EasyBreeding</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{% static "img/favicon.jpg" %}" rel="icon">
+  <link href="{% static "img/apple-touch-icon.png" %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static "lib/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static "lib/font-awesome/css/font-awesome.min.css" %}" rel="stylesheet">
+  <link href="{% static "lib/animate/animate.min.css" %}" rel="stylesheet">
+  <link href="{% static "lib/ionicons/css/ionicons.min.css" %}" rel="stylesheet">
+  <link href="{% static "lib/owlcarousel/assets/owl.carousel.min.css" %}" rel="stylesheet">
+  <link href="{% static "lib/lightbox/css/lightbox.min.css" %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static "css/style.css" %}" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: BizPage
+    Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto">EasyBreeding</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Accueil</a></li>
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Equipe</a></li>
+          <li class="menu-has-children"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active" style="background-image: url('{% static "img/intro-carousel/1.jpg" %}');">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>L'Elevage, un secteur porteur</h2>
+                <p>L’élevage joue un rôle central dans l’économie des pays de la sous-région ouest africaine et en particulier celle du Burkina Faso. En effet, il emploi au moins 80% de la population active et participe à la croissance de l’économie du pays.</p>
+                <a href="{% url 'index' %}" class="btn-get-started scrollto">Lancez-vous</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url('{% static "img/intro-carousel/2.jpg" %}');">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>l'Elevage et les Technologies</h2>
+                <p>Le recourt à la technologie étant devenu incontournable actuellement pour tous secteur d’activité qui se veut productive, nous avons vu la nécessité de l’appliquer au secteur de l’élevage pour le booster.</p>
+                <a href="{% url 'index' %}" class="btn-get-started scrollto">Lancez-vous</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url('{% static "img/intro-carousel/3.jpg" %}');">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Elevage Economique</h2>
+                <p>Comment ouvrir nos marchés de bétail existant à la vente en ligne? Comment avoir un marché qui offre les meilleurs prix et les meilleurs opprotunités? </p>
+                <a href="{% url 'index' %}" class="btn-get-started scrollto">Lancez-vous</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url('{% static "img/intro-carousel/4.jpg" %}');">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Elevage Moderne</h2>
+                <p>Comment facilité l’embouche à tout individus désirant même ne disposant pas d’infrastructure et de temps pour le faire dans l’immédiat ?</p>
+                <a href="{% url 'index' %}" class="btn-get-started scrollto">Lancez-vous</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url('{% static "img/intro-carousel/5.jpg" %}');">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>l'Elevage, les Nouvelles Exigences</h2>
+                <p>De nouvelles exigences en matière de sécurité sanitaire des aliments ou de compétitivité des filières s’imposent désormais face à la globalisation des échanges commerciaux.</p>
+                <a href="{% url 'index' %}" class="btn-get-started scrollto">Lancez-vous</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Precedent</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Suivant</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      Featured Services Section
+    ============================-->
+    <section id="featured-services">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 box">
+            <i class="ion-ios-nutrition-outline"></i>
+            <h4 class="title"><a href="">Gestion alimentaire</a></h4>
+            <p class="description">Elle propose des formules alimentaires en fonction des objectifs préalablement choisi par l’éleveur lors de son inscription et lui notifiera de façon automatique à travers des alertes.</p>
+          </div>
+          
+          <div class="col-lg-3 box box-bg">
+            <i class="ion-ios-folder-outline"></i>
+            <h4 class="title"><a href="">Suivi de la ferme</a></h4>
+            <p class="description">Accéder à son cheptel via notre plateforme en ligne pour suivre toutes les informations sur son bétail. Il recevra à cet effet, des alertes lorsqu’un évènement majeur est observé sur son cheptel.</p>
+          </div>
+
+          <div class="col-lg-3 box">
+            <i class="ion-ios-medkit-outline"></i>
+            <h4 class="title"><a href="">Suivi sanitaire</a></h4>
+            <p class="description">Une modélisation des connaissances du milieu en occurrence celui  des maladies serra intégrer à ce module afin une historique des traitements. Et cela pourra constituer un dictionnaire de données pour les vétérinaires.</p>
+          </div>
+
+          <div class="col-lg-3 box box-bg">
+            <i class="ion-ios-cart-outline"></i>
+            <h4 class="title"><a href="">Marché de betail</a></h4>
+            <p class="description">Ainsi les internautes burkinabè ou la diaspora pourront acheter du betail. Ce type de vente intéresse également les hôtels et restaurants qui veulent du betail bien precis pour leurs clients luxeux.</p>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- #featured-services -->
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>A propos de nous</h3>
+          <p>EasyBreeding une « plateforme d’élevage intelligent, d’achat et de vente de bétail ». Cette plateforme à travers une modélisation des connaissances du domaine, proposera d’une part de façon automatique des bonnes pratiques pour réussir son élevage et d’autre part de faire des achats et des ventes en ligne.</p>
+        </header>
+
+        <div class="row about-cols">
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="{% static "img/about-mission.jpg" %}" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Notre objectif</a></h2>
+              <p>
+				Valoriser, promouvoir et donner une meilleure visibilité à l'elevage;
+				Ameliorer la rentabilité de l'elevage;
+				Rendre l’élevage plus moderne  et praticable par tous ;
+				Constituer une entreprise innovante à impact social considérable.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-col">
+              <div class="img">
+                <img src="{% static "img/about-plan.jpg" %}" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-list-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Notre Plan</a></h2>
+              <p>
+                En proposant des techniques d’embouches et une planification alimentaire et sanitaire pour obtenir les meilleurs résultats.
+                En participant grandement à la lutte contre les maladies animales. 
+                En rendant plus accessible notre marché de bétail au plan national et hors du pays.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="about-col">
+              <div class="img">
+                <img src="{% static "img/about-vision.jpg" %}" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Notre Vision</a></h2>
+              <p>
+                Notre idée d’élevage en ligne est de permettre à tout individu qui dispose des moyens et qui souhaite faire de l’élevage mais n’étant pas sur place et ne disposant pas des infrastructures nécessaires de pouvoir acheter des animaux à travers notre plateforme pour constituer son cheptel.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Services</h3>
+          <p>EasyBreeding une « plateforme d’élevage intelligent, d’achat et de vente de bétail ». Cette plateforme à travers une modélisation des connaissances du domaine, proposera d’une part de façon automatique des bonnes pratiques pour réussir son élevage et d’autre part de faire des achats et des ventes en ligne.</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-folder-outline"></i></div>
+            <h4 class="title"><a href="">Gestion d'un cheptel</a></h4>
+            <p class="description">Gestion de l’embouche</br>
+            Gestion de la reproduction </br>
+            Visiter fiche Animal</br>
+            Gestion alimentaire</br>
+            Suivre courbe évolutive de l’animal</br>
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-medkit-outline"></i></div>
+            <h4 class="title"><a href="">Suivi sanitaire</a></h4>
+            <p class="description">Élaborer un programme de soin</br>
+            Enregistrer actes vétérinaires</br>
+            Gestion du carnet animal</br>
+            Mettre en quarantaine</br>
+            Renseigner infection animal</br> 
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-cart-outline"></i></div>
+            <h4 class="title"><a href="">Achat et vente</a></h4>
+            <p class="description">
+            Effectuer un achat</br>
+            Visiter caractéristiques animal</br>
+            Payer par carte Bancaire</br>
+            Payer via compte mobile</br>
+            Imprimer un reçus</br>
+            </p>
+          </div>
+          
+<!--           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s"> -->
+<!--             <div class="icon"><i class="ion-ios-speedometer-outline"></i></div> -->
+<!--             <h4 class="title"><a href="">Magni Dolores</a></h4> -->
+<!--             <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p> -->
+<!--           </div> -->
+<!--           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s"> -->
+<!--             <div class="icon"><i class="ion-ios-barcode-outline"></i></div> -->
+<!--             <h4 class="title"><a href="">Nemo Enim</a></h4> -->
+<!--             <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p> -->
+<!--           </div> -->
+<!--           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s"> -->
+<!--             <div class="icon"><i class="ion-ios-people-outline"></i></div> -->
+<!--             <h4 class="title"><a href="">Eiusmod Tempor</a></h4> -->
+<!--             <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p> -->
+<!--           </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Call To Action Section
+    ============================-->
+    <section id="call-to-action" class="wow fadeIn">
+      <div class="container text-center">
+        <h3>Alors lancez-vous !</h3>
+        <p> Vous voulez faire de l'elevage votre puit de petrole alors vous etes au bon endroit. Nous prposons des solutions qui vous facilite le metier et qui acroit le rendement de votre elevage.</p>
+        <a class="cta-btn" href="#">Lancez-vous</a>
+      </div>
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+      Skills Section
+    ============================-->
+    <section id="skills">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Nos competences</h3>
+          <p>Une équipe solidaire, dynamique, passionnée et expérimentée autours de la plateforme ;
+			Plateforme perfectionnée, entièrement sécurisée, évolutive et  répondante aux besoins de l’élevage </p>
+        </header>
+
+        <div class="skills-content">
+
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">Equipe <i class="val">100%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">Plateforme <i class="val">90%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">Assistance <i class="val">100%</i></span>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">Disponibilité <i class="val">75%</i></span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!--==========================
+      Facts Section
+    ============================-->
+    <section id="facts"  class="wow fadeIn">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Nos chiffres</h3>
+          <p>Voici quelques chiffres de notre plateforme qui offre un appercu general sur son utilisation.</p>
+        </header>
+
+        <div class="row counters">
+
+  				<div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">274</span>
+            <p>Clients</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">421</span>
+            <p>Projets</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">1,364</span>
+            <p>Hrures d'assistances</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">18</span>
+            <p>Travailleurs acharnés</p>
+  				</div>
+
+  			</div>
+
+        <div class="facts-img">
+          <img src="{% static "img/facts-img.png" %}" alt="" class="img-fluid">
+        </div>
+
+      </div>
+    </section><!-- #facts -->
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">Notre portfolio</h3>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Tout</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static "img/portfolio/app1.jpg" %}" class="img-fluid" alt="">
+                <a href="{% static "img/portfolio/app1.jpg" %}" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">App 1</a></h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static "img/portfolio/web3.jpg" %}" class="img-fluid" alt="">
+                <a href="{% static "img/portfolio/web3.jpg" %}" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Web 3</a></h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static "img/portfolio/app2.jpg" %}" class="img-fluid" alt="">
+                <a href="{% static "img/portfolio/app2.jpg" %}" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">App 2</a></h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static "img/portfolio/card2.jpg" %}" class="img-fluid" alt="">
+                <a href="{% static "img/portfolio/card2.jpg" %}" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Card 2</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static "img/portfolio/web2.jpg" %}" class="img-fluid" alt="">
+                <a href="{% static "img/portfolio/web2.jpg" %}" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Web 2</a></h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static "img/portfolio/app3.jpg" %}" class="img-fluid" alt="">
+                <a href="{% static "img/portfolio/app3.jpg" %}" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">App 3</a></h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static "img/portfolio/card1.jpg" %}" class="img-fluid" alt="">
+                <a href="{% static "img/portfolio/card1.jpg" %}" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Card 1</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static "img/portfolio/card3.jpg" %}" class="img-fluid" alt="">
+                <a href="{% static "img/portfolio/card3.jpg" %}" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Card 3</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static "img/portfolio/web1.jpg" %}" class="img-fluid" alt="">
+                <a href="{% static "img/portfolio/web1.jpg" %}" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Web 1</a></h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <section id="clients" class="wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Nos Clients</h3>
+        </header>
+
+        <div class="owl-carousel clients-carousel">
+          <img src="{% static "img/clients/client-1.png" %}" alt="">
+          <img src="{% static "img/clients/client-2.png" %}" alt="">
+          <img src="{% static "img/clients/client-3.png" %}" alt="">
+          <img src="{% static "img/clients/client-4.png" %}" alt="">
+          <img src="{% static "img/clients/client-5.png" %}" alt="">
+          <img src="{% static "img/clients/client-6.png" %}" alt="">
+          <img src="{% static "img/clients/client-7.png" %}" alt="">
+          <img src="{% static "img/clients/client-8.png" %}" alt="">
+        </div>
+
+      </div>
+    </section><!-- #clients -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <section id="testimonials" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Témoignages</h3>
+        </header>
+
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item">
+            <img src="{% static "img/testimonial-1.jpg" %}" class="testimonial-img" alt="">
+            <h3>Saul Goodman</h3>
+            <h4>Ceo &amp; Founder</h4>
+            <p>
+              <img src="{% static "img/quote-sign-left.png" %}" class="quote-sign-left" alt="">
+              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              <img src="{% static "img/quote-sign-right.png" %}" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="{% static "img/testimonial-2.jpg" %}" class="testimonial-img" alt="">
+            <h3>Sara Wilsson</h3>
+            <h4>Designer</h4>
+            <p>
+              <img src="{% static "img/quote-sign-left.png" %}" class="quote-sign-left" alt="">
+              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+              <img src="{% static "img/quote-sign-right.png" %}" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="{% static "img/testimonial-3.jpg" %}" class="testimonial-img" alt="">
+            <h3>Jena Karlis</h3>
+            <h4>Store Owner</h4>
+            <p>
+              <img src="{% static "img/quote-sign-left.png" %}" class="quote-sign-left" alt="">
+              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+              <img src="{% static "img/quote-sign-right.png" %}" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="{% static "img/testimonial-4.jpg" %}" class="testimonial-img" alt="">
+            <h3>Matt Brandon</h3>
+            <h4>Freelancer</h4>
+            <p>
+              <img src="{% static "img/quote-sign-left.png" %}" class="quote-sign-left" alt="">
+              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+              <img src="{% static "img/quote-sign-right.png" %}" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="{% static "img/testimonial-5.jpg" %}" class="testimonial-img" alt="">
+            <h3>John Larson</h3>
+            <h4>Entrepreneur</h4>
+            <p>
+              <img src="{% static "img/quote-sign-left.png" %}" class="quote-sign-left" alt="">
+              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+              <img src="{% static "img/quote-sign-right.png" %}" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #testimonials -->
+
+    <!--==========================
+      Team Section
+    ============================-->
+    <section id="team">
+      <div class="container">
+        <div class="section-header wow fadeInUp">
+          <h3>Notre Equipe</h3>
+          <p>L'equipe est constituée de 04 personnes devouées et passionnées du metier</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp">
+            <div class="member">
+              <img src="{% static "img/team-1.jpg" %}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="{% static "img/team-2.jpg" %}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="{% static "img/team-3.jpg" %}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="member">
+              <img src="{% static "img/team-4.jpg" %}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #team -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h3>Contactez nous</h3>
+          <p>Pour tout besoin n'hesiter pas à nous contacter aux adresses ci-dessous</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>Rue des ecoles, Ouagadougou 03, Burkina Faso</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Numero de telephone</h3>
+              <p><a href="tel:+22671673651">00226 71.67.37.51</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="info@easybreeding.bf">info@easybreeding.bf</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form">
+          <div id="sendmessage">Votre message a été envoyé. Merci à vous!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Envoyer</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>EasyBreeding</h3>
+            <p>Une plateforme d'elevage intelligent qui revolutionne le domaine de l'elevgage. Elle rend l'elevage si facile, si rentable et si pratique</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Liens utiles</h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Accueil</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">A propos de nous</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Services</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Conditions d'utilisation</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Politique de confidentialité</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contacter nous</h4>
+            <p>
+              Rue des ecoles,<br>
+              Ouagadougou 03,<br>
+              Burkina Faso  <br>
+              <strong>Phone:</strong> +226 71 67 36 51<br>
+              <strong>Email:</strong> info@easybreeding.bf<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Recever instantannement toutes les dernieres nouvelles sur votre email. Ceci vous permet d'avoir les dernieres informations et indications qui vous permettrons d'exploiter au mieux notre plateforme.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit"  value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>EasyBreeding</strong>. | Ce site est protegé par le droit d'auteur.
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
+        -->
+        Best <a href="https://bootstrapmade.com/">Bootstrap Templates</a> by BootstrapMade
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="{% static "lib/jquery/jquery.min.js" %}"></script>
+  <script src="{% static "lib/jquery/jquery-migrate.min.js" %}"></script>
+  <script src="{% static "lib/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
+  <script src="{% static "lib/easing/easing.min.js" %}"></script>
+  <script src="{% static "lib/superfish/hoverIntent.js" %}"></script>
+  <script src="{% static "lib/superfish/superfish.min.js" %}"></script>
+  <script src="{% static "lib/wow/wow.min.js" %}"></script>
+  <script src="{% static "lib/waypoints/waypoints.min.js" %}"></script>
+  <script src="{% static "lib/counterup/counterup.min.js" %}"></script>
+  <script src="{% static "lib/owlcarousel/owl.carousel.min.js" %}"></script>
+  <script src="{% static "lib/isotope/isotope.pkgd.min.js" %}"></script>
+  <script src="{% static "lib/lightbox/js/lightbox.min.js" %}"></script>
+  <script src="{% static "lib/touchSwipe/jquery.touchSwipe.min.js" %}"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="{% static "contactform/contactform.js" %}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{% static "js/main.js" %}"></script>
+
+</body>
+</html>

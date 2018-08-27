@@ -1,0 +1,21 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: =?utf-8?q?R=C3=A9initialisation_de_mot_de_passe?=
+From: webmaster@localhost
+To: admin@gmail.com
+Date: Sat, 12 May 2018 10:18:33 -0000
+Message-ID: <152612031379.3460.5684039765570698801@leonard-N71Jv>
+
+Vous avez reçu cet email parceque vous avez demandé à réinitialiser votre compte sur https://www.EasyBreending.bf.
+
+Suivez ce lien pour réinitialiser votre mot de passe.
+
+http://localhost:8000/accounts/reset/MQ/4w4-73530bb575c281ff3b6d/
+
+Merci pour l'utilisation de notre plateforme
+
+Cordialement,
+
+L'équipe de EasyBreeding
+-------------------------------------------------------------------------------

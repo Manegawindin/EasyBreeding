@@ -1,0 +1,39 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: 
+ =?utf-8?q?R=C3=A9initialisation_du_mot_de_passe_sur_localhost=3A8000?=
+From: webmaster@localhost
+To: admin@gmail.com
+Date: Thu, 07 Jun 2018 18:08:29 -0000
+Message-ID: <152839490935.6486.11498740498297458114@leonard-N71Jv>
+
+
+
+Cher leonard,
+
+
+You are receiving this email because you (or someone pretending to be you)
+requested that your password be reset on the localhost:8000 site. If you do not
+wish to reset your password, please ignore this message.
+
+
+
+Pour renouveler votre mot de passe, veuillez cliquer sur le lien ci-dessous,
+ou le copier/coller dans la barre d'adresse de votre navigateur :
+
+
+<a rel="noreferrer" href="http://localhost:8000/accounts/password/reset/confirm/MQ/4wu-a96afbd7c88d1290ed35/">
+  http://localhost:8000/accounts/password/reset/confirm/MQ/4wu-a96afbd7c88d1290ed35/
+</a>
+
+Rappel de votre nom d'utilisateur, si vous l'avez oublié : leonard
+
+
+Cordialement,
+localhost:8000 Management
+
+
+
+
+-------------------------------------------------------------------------------

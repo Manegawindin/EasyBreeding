@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+
+	
+  {% block title %} Connexion | EasyBreeding {% endblock %}
+  
+	{% block stylesheets %}
+		<link href="{% static "assets/css/login2.css" %}" rel="stylesheet">
+	{% endblock %}
+
+{% block nav_header%}
+{% endblock %}
+
+
+{% block nav_sidebar %}
+    
+{% endblock %}
+
+{% block content_main %}
+	
+		</br>
+		<br><br><br><br><br><br>
+		
+		
+		<div class="container" background={% static 'img/vaches.jpg' %}>
+			<div class="row">
+				<section id="content" class="col-sm-6  col-md-6 p-2">
+		  
+		    <form method="post" action="{% url 'login' %}" class="form login">
+				{% csrf_token %}
+					<h1 style="color:green">EasyBreeding</h1>
+
+					
+		      <div >
+
+		        <span >{{ form.username }}</span>
+		      </div>
+
+					
+		      <div class="form__field">
+
+		        <span >{{ form.password }}</span>
+		      </div>
+		
+		      <div >
+		        <input type="submit" value="connecter" />
+						<input type="hidden" name="next" value="{{ next }}" />
+						<a href="{% url 'password_reset' %}">Mot de passe oublié?</a>
+						<a href="{% url 'create_user' %}" >Pas encore de compte?</a></span>
+		      </div>
+		
+		    </form>
+				{% if form.errors %}
+					<p style="color:red" class="text--center new-p"> Nom d'utilisateur ou mot de passe incorrect. Ressayer </p>
+				{% endif %}
+			
+				{% if next %}
+						{% if user.is_authenticated %}
+						<p style="color:red" class="text--center new-p">Vous n'avez pas les droits d'acces à cette page. 
+							Connectez avec un compte qui a ces droits.</p>
+						{% else %}
+						<p style="color:red" class="text--center new-p">Connectez-vous pour voir cette page s'il vous plait.</p>
+						{% endif %}
+				{% endif %}
+				
+				<div class="button">
+					<a href="#">Faites l'élevage autrement</a>
+				</div><!-- button -->
+
+				</section><!-- content -->
+			</div>
+		</div><!-- container -->
+
+{% endblock %}
+{% block footer %}
+	
+{% endblock %}

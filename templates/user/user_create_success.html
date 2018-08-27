@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+	
+  {% block title %} EasyBreeding {% endblock %}
+  
+	{% block stylesheets %}
+		<link href="{% static "assets/css/login.css" %}" rel="stylesheet">
+	{% endblock %}
+
+{% block nav_sidebar %}
+    
+{% endblock %}
+
+{% block content_main %}
+	
+    </br>
+    <br><br>
+    
+    <div class="align card container border border-success">
+    
+        <div class="grid card-body row">
+            <section id="content" class="col-sm-6  col-md-6 p-2 mx-auto ">
+                
+                <h4 class="card-title">Création de compte</h4>
+                <hr><hr>
+                    <div class="login" >
+                        <h6>Compte créer avec succès.</h6>
+                        <p><a href="{% url 'login' %}" style="color:dodgerblue">Connectez</a> vous maintenant.</p>
+                    </div>
+            </section>	
+        </div>	
+    </div>
+
+{% endblock %}
+{% block footer %}
+	
+{% endblock %}

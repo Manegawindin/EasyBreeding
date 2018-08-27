@@ -1,0 +1,16 @@
+{% autoescape off %}
+Bonjour {{ user.username }},
+
+Vous avez reçu cet email parceque vous avez demandé à créer un compte sur https://www.EasyBreending.bf.
+
+Suivez ce lien pour finaliser la creation de votre compte.
+
+http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+
+Merci pour l'utilisation de notre plateforme
+
+Cordialement,
+
+L'équipe de EasyBreeding
+
+{% endautoescape %}

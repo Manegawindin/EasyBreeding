@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}
+Gestion Cheptel | EasyBreeding
+{% endblock %}
+
+	{% block breadcrumbs %}
+	    {# Breadcrumb implementation left to developers #}
+	  <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Gestion Cheptel</a></li>
+        <li class="active">Ici</li>
+      </ol>
+	{% endblock %}
+  
+  {% block content %}
+  	<h1>Gestion de cheptel</h1>
+  	
+  	{% if Cheptel.objects.all %}
+	    <ul>
+	    {% for c in Cheptel.objects.all %}
+	        <li><a href="#">{{ c.nomCheptel}} avec {{c.nombreAnimaux }} animal(aux)</a></li>
+	    {% endfor %}
+	    </ul>
+	{% else %}
+	    <p>No Cheptel are available.</p>
+	{% endif %}
+	  	
+		 
+  {% endblock %}
+
